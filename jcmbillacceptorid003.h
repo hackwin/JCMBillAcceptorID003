@@ -25,16 +25,16 @@ class JCMBillAcceptorID003{
 		JCMBillAcceptorID003(HardwareSerial &hs): hardwareSerial(hs){
 			
 			if (&hardwareSerial == &Serial1){
-				BILL_ACCEPTOR_RX = 18;
-				BILL_ACCEPTOR_TX = 19;
+				BILL_ACCEPTOR_RX = 19;
+				BILL_ACCEPTOR_TX = 18;
 			}
 			else if (&hardwareSerial == &Serial2){
-				BILL_ACCEPTOR_RX = 20;
-				BILL_ACCEPTOR_TX = 21;
+				BILL_ACCEPTOR_RX = 17;
+				BILL_ACCEPTOR_TX = 16;
 			}
 			else if (&hardwareSerial == &Serial3){
-				BILL_ACCEPTOR_RX = 22;
-				BILL_ACCEPTOR_TX = 23;
+				BILL_ACCEPTOR_RX = 15;
+				BILL_ACCEPTOR_TX = 14;
 			}
 			
 			pinMode(BILL_ACCEPTOR_RX, INPUT);
